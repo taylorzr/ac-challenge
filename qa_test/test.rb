@@ -1,11 +1,4 @@
-require 'capybara'
-require 'capybara/rspec'
-require 'pry'
 require_relative 'helper'
-
-Capybara.run_server = false
-Capybara.current_driver = :selenium
-Capybara.app_host = 'http://demo.avantcredit.com'
 
 feature "Demo" do 
   include DemoHelper

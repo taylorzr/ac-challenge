@@ -1,3 +1,11 @@
+require 'capybara'
+require 'capybara/rspec'
+require 'pry'
+
+Capybara.run_server = false
+Capybara.current_driver = :selenium
+Capybara.app_host = 'http://demo.avantcredit.com'
+
 module DemoHelper
   def retrieve_application
     visit "/"
