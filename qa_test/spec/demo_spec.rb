@@ -1,4 +1,4 @@
-require_relative 'helper'
+require_relative 'demo_helper'
 
 feature "Demo" do 
   include DemoHelper
